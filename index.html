@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        div {
+            height: 100vh;
+            background: 
+                url(006-automobile.png) no-repeat, 
+                url(005-suv.png) no-repeat, 
+                url(004-motor-sports.png) no-repeat, 
+                url(003-delivery-truck.png) no-repeat, 
+                url(002-derrick.png) no-repeat, 
+                url(001-airplanes.png) no-repeat,
+                url(road.png) repeat;
+            
+            background-size: 
+                /* wartości rozmiaru kolejnych grafik */
+                auto 15%, /*automibile*/
+                auto 15%, /*suv*/
+                auto 10%, /*motor*/
+                auto 30%, /*truck*/
+                auto 30%, /*truck2*/
+                auto 40%, /*samolot*/
+                auto 25%; /*droga*/
+            
+            background-position: 
+                top 1% left 5%, /*automibile*/
+                top 30% left 5%, /*suv*/
+                top 45% left 5%, /*motor*/
+                top 60% left 5%, /*truck*/
+                top 92% left 5%, /*truck2*/
+                top 50% left -160%, /*samolot*/
+                top 0% left 0%;
+                 /*droga*/
+                
+            transition: background-position 10s ease;
+        }
+        div:hover {
+            background-position: 
+                top 1% left 75%, /*automibile*/
+                top 30% left 65%, /*suv*/
+                top 45% left 98%, /*motor*/
+                top 60% left 30%, /*truck*/
+                top 92% left 15%, /*truck2*/
+                top 30% left 280%, /*samolot*/
+                top 0 left -2300px;
+                 /*droga*/
+                
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+
+    </div>
+
+</body>
+
+</html>
